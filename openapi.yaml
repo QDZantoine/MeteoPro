@@ -1,0 +1,26 @@
+openapi: 3.1.0
+info:
+  title: MétéoPro API
+  version: 0.1.0
+  description: API météo fil rouge de la formation. TP 3 : compléter ce contrat.
+  contact:
+    name: Équipe MétéoPro
+servers:
+  - url: http://localhost:3000
+tags:
+  - name: système
+paths:
+  /health:
+    get:
+      tags: [système]
+      operationId: getHealth
+      summary: État du service
+      responses:
+        '200':
+          description: Service disponible
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status: { type: string, enum: [ok] }

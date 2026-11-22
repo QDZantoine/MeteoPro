@@ -1,0 +1,8 @@
+{
+  "lyon": { "name": "Lyon", "latitude": 45.76, "longitude": 4.84 },
+  "paris": { "name": "Paris", "latitude": 48.86, "longitude": 2.35 },
+  "marseille": { "name": "Marseille", "latitude": 43.3, "longitude": 5.37 },
+  "toulouse": { "name": "Toulouse", "latitude": 43.6, "longitude": 1.44 },
+  "lille": { "name": "Lille", "latitude": 50.63, "longitude": 3.06 },
+  "nantes": { "name": "Nantes", "latitude": 47.22, "longitude": -1.55 }
+}

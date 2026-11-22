@@ -1,0 +1,26 @@
+{
+  "name": "meteopro",
+  "version": "0.1.0",
+  "private": true,
+  "description": "API météo fil rouge de la formation REST API : bonnes pratiques et sécurité",
+  "type": "module",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "dev": "node --env-file-if-exists=.env --watch src/server.ts",
+    "start": "node --env-file-if-exists=.env src/server.ts",
+    "test": "node --test \"tests/**/*.test.ts\"",
+    "typecheck": "tsc",
+    "audit-api": "node --disable-warning=ExperimentalWarning audit/server.ts"
+  },
+  "dependencies": {
+    "express": "^5.3.0",
+    "zod": "^4.6.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  }
+}
